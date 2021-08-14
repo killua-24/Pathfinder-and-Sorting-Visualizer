@@ -1,0 +1,75 @@
+.grid {
+  margin-top: 10px;
+}
+.row {
+  justify-content: center;
+}
+.stop {
+  touch-action: manipulation;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.node {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid rgba(180, 207, 221, 0.705);
+  display: inline-block;
+  touch-action: manipulation;
+}
+
+.animated-node {
+  animation-name: searching;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes searching {
+  from {
+    background-color: rgba(247, 72, 188, 0.857);
+  }
+  to {
+    background-color: rgba(184, 48, 233, 0.5);
+  }
+}
+
+.animated-path {
+  animation-name: path;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes path {
+  from {
+    background-color: rgba(221, 255, 0, 0.8);
+  }
+  to {
+    background: url(../../resources/send.svg);
+    background-size: contain;
+    background-color: rgba(0, 247, 255, 0.8);
+  }
+}
+
+.start {
+  background: url(../../resources/space-ship.svg);
+  transform: rotate(45deg);
+  background-size: cover;
+}
+
+.finish {
+  background: url(../../resources/planet.svg);
+  background-size: cover;
+}
+
+.wall {
+  background-color: rgb(15, 11, 50);
+  border-radius: 5px !important;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
